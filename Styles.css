@@ -331,5 +331,8 @@ body {
   opacity: 0.8;
 }
 
-
+  .loading{
+    display: inline-block;
+    font-size: 0.7rem;
+  }
 
