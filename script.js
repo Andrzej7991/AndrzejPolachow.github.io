@@ -5,6 +5,7 @@ let text2 = "Beginner Frontend Web Developer";
 
 
 
+
 function animateText(texts, container, delay) {
     let index = 0;
     let direction = 1;
@@ -48,33 +49,27 @@ function animateText(texts, container, delay) {
     });
 });
 
-// const lightbox = document.createElement('div');
-// lightbox.id = 'lightbox';
-// document.body.appendChild(lightbox);
 
-// const images = document.querySelectorAll('img');
 
-// images.forEach(image => {
-//   image.addEventListener('click', e => {
-//     lightbox.classList.add('active')
-//     const img = document.createElement('img')
-//     img.src = image.src
-//     while(lightbox.firstChild){
-//       lightbox.removeChild(lightbox.firstChild)
-//     }
-//     lightbox.appendChild(img)
-//   })
-// })
+document.addEventListener("DOMContentLoaded", function() {
+  let dotContainers = document.querySelectorAll('.dot');
+  let dotCount = 0;
 
-// lightbox.addEventListener('click', e => {
-//   // if(e.target !== e.currentTarget) return
-//   lightbox.classList.remove('active')
-// })
+  setInterval(() => {
+    dotCount++;
+    if (dotCount > 3) {
+      dotContainers.forEach(dotContainer => {
+        dotContainer.innerHTML = ''; 
+      });
+      dotCount = 0; 
+    } else {
+      dotContainers.forEach(dotContainer => {
+        dotContainer.innerHTML += '.';
+      });
+    }
 
-// document.addEventListener('keydown', event => {
-//   if (event.key === 'Escape') {
-//     lightbox.classList.remove('active');
-//   }
-// });
+    
+  }, 1000); 
+});
 
 
