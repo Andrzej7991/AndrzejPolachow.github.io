@@ -336,3 +336,14 @@ body {
     font-size: 0.7rem;
   }
 
+.BoczekMeble{
+  display: flex;
+  text-decoration:none;
+  color: black;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vh;
+}
+
+
