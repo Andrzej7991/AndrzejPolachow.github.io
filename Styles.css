@@ -283,6 +283,20 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.BoczekMeble{
+  display: flex;
+  text-decoration:none;
+  color: black;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.BoczekMeble .prject{
+  margin-top: 100px;
+}
+
 
 
 .bg-video-full .text-container {
@@ -298,6 +312,10 @@ body {
   line-height: 0.70em;
   outline: none;
   animation: animate1 3s linear infinite;
+}
+.BoczekMeble {
+  padding: 0.5vh;
+ 
 }
 
 @keyframes animate1{
@@ -331,19 +349,5 @@ body {
   opacity: 0.8;
 }
 
-  .loading{
-    display: inline-block;
-    font-size: 0.7rem;
-  }
-
-.BoczekMeble{
-  display: flex;
-  text-decoration:none;
-  color: black;
-  font-family: 'Roboto';
-  justify-content: center;
-  align-items: center;
-  padding: 0.5vh;
-}
 
 
